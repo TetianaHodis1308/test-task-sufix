@@ -3,13 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "parcel ./src/index.html --open"
+    "start": "parcel ./src/index.html --open",
+    "build": "parcel build ./src/index.html",
+    "deploy": "npm run build && gh-pages -d dist"
+
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.15.4",
+    "gh-pages": "^6.3.0",
     "parcel": "^2.15.4"
   }
 }
