@@ -1,0 +1,2 @@
+const e=document.querySelector(".button-toggle-table"),t=document.querySelector(".button-toggle-grid"),c=document.querySelector(".table-scroll-container"),l=document.querySelector(".cards");e.addEventListener("click",()=>{e.classList.add("active"),t.classList.remove("active"),c.style.display="block",l.style.display="none"}),t.addEventListener("click",()=>{t.classList.add("active"),e.classList.remove("active"),l.style.display="grid",c.style.display="none"});
+//# sourceMappingURL=test-task-sufix.f2a617e8.js.map
