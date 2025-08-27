@@ -1,0 +1,45 @@
+@media (min-width: 768px) {
+  .header {
+    &__nav {
+      display: flex;
+    }
+
+    &__menu {
+      display: none;
+    }
+
+    &__button {
+      margin-left: 16px;
+      margin-right: 25px;
+    }
+  }
+
+  .aside {
+    display: flex;
+  }
+
+  .main {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .main-container {
+    height: calc(100vh - 56px);
+  }
+
+  .button-dark{
+    display: none;
+  }
+
+  .buttons-toggle {
+    display: flex;
+  }
+  .cards {
+    margin-bottom: 24px;
+  }
+
+  .footer {
+    display: none;
+  }
+}

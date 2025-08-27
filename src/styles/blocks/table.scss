@@ -1,0 +1,166 @@
+.table-scroll-container {
+  overflow-x: auto;
+  display: none;
+}
+
+.table-wrapper {
+  width: max-content;
+  margin-top: 24px;
+  background-color: white;
+  border-radius: 6px;
+}
+
+.cards__table {
+  background-color: white;
+  color: #2e2e54;
+  border-radius: 6px;
+  padding: 24px;
+  border-collapse: collapse;
+
+  th {
+    padding: 12px 4px;
+    border-bottom: 1px solid $text-color-light;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  td {
+    padding: 12px 4px;
+    box-sizing: border-box;
+    border-bottom: 1px solid $border-color;
+  }
+
+  tr {
+    height: 48px;
+  }
+}
+
+.table-header {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  img {
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+  }
+}
+
+.card__table {
+  &-item {
+    display: flex;
+    align-items: center;
+  }
+
+  &-title {
+    gap: 8px;
+
+    &-img {
+      width: 40px;
+      height: 24px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    &-btn {
+      width: 24px;
+      height: 24px;
+      border: 1px solid $border-color;
+      border-radius: 4px;
+      cursor: pointer;
+      background-color: $site-bg-contrast;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-text {
+      font-weight: 700;
+      font-size: 14px;
+      white-space: nowrap;
+    }
+  }
+
+  &-text {
+    font-weight: 400;
+    font-size: 14px;
+
+    &-category {
+      width: 152px;
+    }
+  }
+
+  &-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  &-button {
+    width: 156px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $site-bg-contrast;
+    border: 1px solid #d2d4d8;
+    border-radius: 6px;
+    padding: 0;
+    cursor: pointer;
+
+    &-svg {
+      width: 32px;
+    }
+
+    &-text {
+      font-weight: 400;
+      font-size: 14px;
+      color: $text-color;
+      white-space: nowrap;
+      padding-right: 12px;
+    }
+  }
+
+  &-moderate-button {
+    width: 124px;
+    height: 32px;
+    box-sizing: border-box;
+  }
+}
+
+.bottom__table {
+  min-width: max-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  overflow: auto;
+
+  &-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 80px;
+      cursor: pointer;
+    }
+
+    &-text {
+      font-weight: 400;
+      font-size: 12px;
+      color: $text-color-light;
+      margin-right: 8px;
+      width: 45px;
+    }
+  }
+
+  &-pagination {
+    img {
+      width: 338px;
+    }
+  }
+}
