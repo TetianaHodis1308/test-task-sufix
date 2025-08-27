@@ -1,4 +1,5 @@
-'use strict';
+// 'use strict';
+import './styles/base.scss';
 
   const tableBtn = document.querySelector('.button-toggle-table');
   const gridBtn = document.querySelector('.button-toggle-grid');
