@@ -1,12 +1,13 @@
 {
+  "homepage": "https://tetianahodis1308.github.io/test-task-sufix",
   "name": "test-task-sufix",
   "version": "1.0.0",
   "description": "",
   "scripts": {
     "start": "parcel ./src/index.html --open",
-    "build": "parcel build ./src/index.html",
-    "deploy": "npm run build && gh-pages -d dist"
+      "build": "parcel build ./src/index.html --public-url /test-task-sufix/",
 
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
